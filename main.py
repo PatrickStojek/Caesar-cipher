@@ -5,10 +5,10 @@ alphabet_dict = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h',
 
     
 def char_shift(char, shift) :
-        char.lower()
         if 'A' <= char <= 'z':
             print('the number is within accaptable range because the ascci value is ' + str(ord(char)))
             return chr(ord(char) + shift)
         else:
-             print("the number is not within accaptable range" + str(ord(char)))
-print(char_shift('3', 100))
+            print("the number is not within accaptable range" + str(ord(char)))
+            return None
+print(char_shift('#', 5))
