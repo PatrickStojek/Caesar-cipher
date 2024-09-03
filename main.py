@@ -11,4 +11,18 @@ def char_shift(char, shift) :
         else:
             print("the number is not within accaptable range" + str(ord(char)))
             return None
-print(char_shift('#', 5))
+
+
+def char_shift_use_dic(char, shift):
+     if(alphabet_dict.__contains__(char)):
+          char_index = alphabet_dict.get(char)
+          char_shifted_index = 0
+     
+          
+def index_of_key(dict, key_to_find):
+    try:
+        return list(dict.values()).index(key_to_find) + 1
+    except ValueError:
+        return -1
+
+print(index_of_key(alphabet_dict, 'b'))
